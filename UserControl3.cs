@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Labirint_Editor
 {
-    public partial class UserControl2 : UserControl
+    public partial class UserControl3 : UserControl
     {
-        public UserControl2()
+        public UserControl3()
         {
             InitializeComponent();
-        }
-
-        private void UserControl2_Load(object sender, EventArgs e)
-        {
-            this.BackColor = Color.Gray;
-            label1.Text = "Biome";
         }
     }
 }
