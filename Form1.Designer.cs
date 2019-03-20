@@ -31,6 +31,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.MainCustomPanel = new System.Windows.Forms.Panel();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.userControl21 = new Labirint_Editor.UserControl2();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -131,7 +132,6 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.userControl21 = new Labirint_Editor.UserControl2();
             this.panel6.SuspendLayout();
             this.MainCustomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -187,6 +187,14 @@
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.Gray;
+            this.userControl21.Location = new System.Drawing.Point(37, 228);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(210, 83);
+            this.userControl21.TabIndex = 0;
             // 
             // trackBar1
             // 
@@ -1334,14 +1342,6 @@
             this.textBox23.Size = new System.Drawing.Size(198, 34);
             this.textBox23.TabIndex = 0;
             this.textBox23.Text = "Mobs Editor";
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.Color.Gray;
-            this.userControl21.Location = new System.Drawing.Point(37, 228);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(210, 83);
-            this.userControl21.TabIndex = 0;
             // 
             // Form1
             // 

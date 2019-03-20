@@ -45,7 +45,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Biome";
+            this.label1.Text = "Mob";
             // 
             // label2
             // 
@@ -137,6 +137,7 @@
             this.Controls.Add(this.textBox);
             this.Name = "UserControl3";
             this.Size = new System.Drawing.Size(200, 101);
+            this.Load += new System.EventHandler(this.UserControl3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,8 +150,8 @@
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.ComboBox comboBox3;
         public System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label3;
     }
 }

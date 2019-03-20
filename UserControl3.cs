@@ -15,6 +15,12 @@ namespace Labirint_Editor
         public UserControl3()
         {
             InitializeComponent();
+            
+        }
+
+        private void UserControl3_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Gray;
         }
     }
 }
