@@ -32,21 +32,19 @@
             this.MainCustomPanel = new System.Windows.Forms.Panel();
             this.SaveButton = new System.Windows.Forms.Button();
             this.userControl21 = new Labirint_Editor.UserControl2();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.userControl31 = new Labirint_Editor.UserControl3();
             this.panel6.SuspendLayout();
             this.MainCustomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel6
@@ -63,7 +61,6 @@
             this.MainCustomPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.MainCustomPanel.Controls.Add(this.SaveButton);
             this.MainCustomPanel.Controls.Add(this.userControl21);
-            this.MainCustomPanel.Controls.Add(this.trackBar1);
             this.MainCustomPanel.Controls.Add(this.textBox4);
             this.MainCustomPanel.Location = new System.Drawing.Point(7, 143);
             this.MainCustomPanel.Name = "MainCustomPanel";
@@ -95,15 +92,6 @@
             this.userControl21.Size = new System.Drawing.Size(210, 83);
             this.userControl21.TabIndex = 0;
             // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.trackBar1.Location = new System.Drawing.Point(37, 140);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(172, 45);
-            this.trackBar1.TabIndex = 2;
-            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
-            // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Montserrat", 9.249999F);
@@ -129,7 +117,6 @@
             // 
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.trackBar2);
             this.panel1.Controls.Add(this.textBox22);
             this.panel1.Controls.Add(this.textBox23);
             this.panel1.Location = new System.Drawing.Point(460, 9);
@@ -157,19 +144,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.userControl31);
             this.panel2.Location = new System.Drawing.Point(7, 143);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(419, 341);
             this.panel2.TabIndex = 3;
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.trackBar2.Location = new System.Drawing.Point(7, 92);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(172, 45);
-            this.trackBar2.TabIndex = 2;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // textBox22
             // 
@@ -192,6 +171,14 @@
             this.textBox23.TabIndex = 0;
             this.textBox23.Text = "Mobs Editor";
             // 
+            // userControl31
+            // 
+            this.userControl31.BackColor = System.Drawing.Color.Gray;
+            this.userControl31.Location = new System.Drawing.Point(72, 210);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(200, 101);
+            this.userControl31.TabIndex = 0;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(971, 507);
@@ -202,10 +189,9 @@
             this.panel6.PerformLayout();
             this.MainCustomPanel.ResumeLayout(false);
             this.MainCustomPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -216,18 +202,17 @@
         private System.Windows.Forms.TextBox BiomesCountText;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel MainCustomPanel;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TrackBar trackBar2;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TextBox textBox23;
         private UserControl2 userControl21;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private UserControl3 userControl31;
     }
 }
 

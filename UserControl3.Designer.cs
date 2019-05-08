@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 18;
             this.label1.Text = "Mob";
             // 
@@ -105,6 +105,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(58, 20);
             this.textBox1.TabIndex = 19;
+            this.textBox1.Text = "-";
             // 
             // textBox2
             // 
@@ -112,6 +113,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(81, 20);
             this.textBox2.TabIndex = 20;
+            this.textBox2.Text = "0";
             // 
             // label3
             // 

@@ -25,15 +25,10 @@ namespace Labirint_Editor
         {
             InitializeComponent();
         }
-
-        private void trackBar1_ValueChanged(object sender, EventArgs e)
-        {
-            addBiomesCount = trackBar1.Value;
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             string directory = saveFileDialog1.InitialDirectory;
@@ -49,18 +44,20 @@ namespace Labirint_Editor
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void trackBar2_Scroll(object sender, EventArgs e)
-        {
-            
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
+            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+            string directory = saveFileDialog1.InitialDirectory;
+            XmlDocument xD = new XmlDocument();
+            xD.Load(directory + saveFileDialog1.FileName + ".xml");
+
+            if (userControl31.comboBox3.SelectedItem != null)
+            {
+                XmlSerializer ser = new XmlSerializer(typeof(List<Mob>));
+                FileStream fs = new FileStream(directory + saveFileDialog1.FileName + ".xml", FileMode.OpenOrCreate);
+                ser.Serialize(fs, AddMobs)
+            }
             /* 
             XmlDocument xD = new XmlDocument();
             xD.Load("E:/MyCode/kirill_strong/Labirint_Game/Labirint_Game/bin/Debug/mobs.xml");
@@ -93,11 +90,6 @@ namespace Labirint_Editor
                 //xD.AppendChild(xMain);
                 xD.Save("E:/MyCode/kirill_strong/Labirint_Game/Labirint_Game/bin/Debug/mobs.xml");
             }*/
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
