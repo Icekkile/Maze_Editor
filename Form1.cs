@@ -18,8 +18,8 @@ namespace Labirint_Editor
     {
         public static int addBiomesCount;
 
-        public static List<Mob> AddMobs = new List<Mob>();
-        public static List<Biome> AddBiomes = new List<Biome>();
+        public static List<EditorMob> AddMobs = new List<EditorMob>();
+        public static List<EditorBiome> AddBiomes = new List<EditorBiome>();
 
         public Form1()
         {
@@ -62,9 +62,25 @@ namespace Labirint_Editor
         {
             if (userControl21.comboBox3.SelectedItem != null || userControl21.comboBox2.SelectedItem != null)
             {
-                Biome biome = new Biome();
+                EditorBiome biome = new EditorBiome();
                 biome.name = userControl21.textBox.Text;
-                //biome.forColor = 
+                biome.forColor = userControl21.comboBox2.SelectedItem.ToString();
+                biome.backColor = userControl21.comboBox3.SelectedItem.ToString();
+                AddBiomes.Add(biome);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (userControl31.comboBox3.SelectedItem != null)
+            {
+                EditorMob mob = new EditorMob();
+                mob.name = userControl31.textBox.Text;
+                mob.color = userControl31.comboBox3.SelectedItem.ToString();
+                mob.sym = userControl31.textBox1.Text.First();
+                int.TryParse(userControl31.textBox2.Text, out int x);
+                mob.Damage = x;
+                AddMobs.Add(mob);
             }
         }
     }

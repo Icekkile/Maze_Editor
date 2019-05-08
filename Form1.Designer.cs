@@ -30,17 +30,17 @@
         {
             this.panel6 = new System.Windows.Forms.Panel();
             this.MainCustomPanel = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.userControl21 = new Labirint_Editor.UserControl2();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.userControl31 = new Labirint_Editor.UserControl3();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.userControl31 = new Labirint_Editor.UserControl3();
-            this.userControl21 = new Labirint_Editor.UserControl2();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel6.SuspendLayout();
             this.MainCustomPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,6 +67,19 @@
             this.MainCustomPanel.Size = new System.Drawing.Size(416, 341);
             this.MainCustomPanel.TabIndex = 3;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LawnGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("DFPOP1-W9", 15.25F);
+            this.button2.Location = new System.Drawing.Point(259, 126);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 83);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // SaveButton
             // 
             this.SaveButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -83,6 +96,14 @@
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.Gray;
+            this.userControl21.Location = new System.Drawing.Point(20, 126);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(210, 83);
+            this.userControl21.TabIndex = 0;
             // 
             // textBox3
             // 
@@ -104,6 +125,30 @@
             this.panel1.Size = new System.Drawing.Size(510, 487);
             this.panel1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.userControl31);
+            this.panel2.Location = new System.Drawing.Point(7, 143);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(419, 341);
+            this.panel2.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LawnGreen;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("DFPOP1-W9", 15.25F);
+            this.button3.Location = new System.Drawing.Point(255, 126);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 83);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -121,16 +166,13 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // panel2
+            // userControl31
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.userControl31);
-            this.panel2.Location = new System.Drawing.Point(7, 143);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(419, 341);
-            this.panel2.TabIndex = 3;
+            this.userControl31.BackColor = System.Drawing.Color.Gray;
+            this.userControl31.Location = new System.Drawing.Point(21, 126);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(200, 101);
+            this.userControl31.TabIndex = 0;
             // 
             // textBox23
             // 
@@ -142,47 +184,6 @@
             this.textBox23.Size = new System.Drawing.Size(198, 34);
             this.textBox23.TabIndex = 0;
             this.textBox23.Text = "Mobs Editor";
-            // 
-            // userControl31
-            // 
-            this.userControl31.BackColor = System.Drawing.Color.Gray;
-            this.userControl31.Location = new System.Drawing.Point(21, 126);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(200, 101);
-            this.userControl31.TabIndex = 0;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.Color.Gray;
-            this.userControl21.Location = new System.Drawing.Point(20, 126);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(210, 83);
-            this.userControl21.TabIndex = 0;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LawnGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("DFPOP1-W9", 15.25F);
-            this.button2.Location = new System.Drawing.Point(259, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 83);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LawnGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("DFPOP1-W9", 15.25F);
-            this.button3.Location = new System.Drawing.Point(255, 126);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 83);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
