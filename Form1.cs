@@ -56,7 +56,7 @@ namespace Labirint_Editor
             {
                 XmlSerializer ser = new XmlSerializer(typeof(List<Mob>));
                 FileStream fs = new FileStream(directory + saveFileDialog1.FileName + ".xml", FileMode.OpenOrCreate);
-                ser.Serialize(fs, AddMobs)
+                ser.Serialize(fs, AddMobs);
             }
             /* 
             XmlDocument xD = new XmlDocument();
