@@ -77,66 +77,6 @@ namespace Labirint_Editor
             BiomeBackBoxes.Add(comboBox12);
             #endregion
             */
-            # region MobPanels init
-            MobsPanels.Add(panel12);
-            MobsPanels.Add(panel13);
-            MobsPanels.Add(panel9);
-            MobsPanels.Add(panel7);
-            MobsPanels.Add(panel4);
-            MobsPanels.Add(panel10);
-            MobsPanels.Add(panel11);
-            MobsPanels.Add(panel8);
-            MobsPanels.Add(panel5);
-            MobsPanels.Add(panel3);
-            #endregion
-            #region MobsNameBoxes init
-            MobsNameBoxes.Add(textBox20);
-            MobsNameBoxes.Add(textBox21);
-            MobsNameBoxes.Add(textBox17);
-            MobsNameBoxes.Add(textBox15);
-            MobsNameBoxes.Add(textBox2);
-            MobsNameBoxes.Add(textBox18);
-            MobsNameBoxes.Add(textBox19);
-            MobsNameBoxes.Add(textBox16);
-            MobsNameBoxes.Add(textBox5);
-            MobsNameBoxes.Add(textBox1);
-            #endregion
-            #region MobsSymBoxes init
-            MobsSymBoxes.Add(textBox24);
-            MobsSymBoxes.Add(textBox27);
-            MobsSymBoxes.Add(textBox29);
-            MobsSymBoxes.Add(textBox31);
-            MobsSymBoxes.Add(textBox33);
-            MobsSymBoxes.Add(textBox35);
-            MobsSymBoxes.Add(textBox37);
-            MobsSymBoxes.Add(textBox39);
-            MobsSymBoxes.Add(textBox41);
-            MobsSymBoxes.Add(textBox43);
-            #endregion
-            #region MobsForBoxes init
-            MobsForBoxes.Add(comboBox38);
-            MobsForBoxes.Add(comboBox40);
-            MobsForBoxes.Add(comboBox32);
-            MobsForBoxes.Add(comboBox28);
-            MobsForBoxes.Add(comboBox24);
-            MobsForBoxes.Add(comboBox34);
-            MobsForBoxes.Add(comboBox36);
-            MobsForBoxes.Add(comboBox30);
-            MobsForBoxes.Add(comboBox26);
-            MobsForBoxes.Add(comboBox24);
-            #endregion
-            #region MobsDamageBoxes init
-            MobsDamageBoxes.Add(textBox25);
-            MobsDamageBoxes.Add(textBox26);
-            MobsDamageBoxes.Add(textBox28);
-            MobsDamageBoxes.Add(textBox30);
-            MobsDamageBoxes.Add(textBox32);
-            MobsDamageBoxes.Add(textBox34);
-            MobsDamageBoxes.Add(textBox36);
-            MobsDamageBoxes.Add(textBox38);
-            MobsDamageBoxes.Add(textBox40);
-            MobsDamageBoxes.Add(textBox42);
-            #endregion
         }
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)
@@ -152,7 +92,6 @@ namespace Labirint_Editor
             string directory = saveFileDialog1.InitialDirectory;
             XmlDocument xD = new XmlDocument();
             xD.Load(directory + saveFileDialog1.FileName + ".xml");
-            XmlDeclaration XmlDemlDeclaration("1.0", "utf-8", null);
 
             
             if (userControl21.comboBox3.SelectedItem != null || userControl21.comboBox2.SelectedItem != null)
@@ -240,6 +179,7 @@ namespace Labirint_Editor
                 mobEl.AppendChild(symEl);
                 mobEl.AppendChild(damageEl);
                 xMain.AppendChild(mobEl);
+                tex
                 //xD.AppendChild(xMain);
                 xD.Save("E:/MyCode/kirill_strong/Labirint_Game/Labirint_Game/bin/Debug/mobs.xml");
             }
