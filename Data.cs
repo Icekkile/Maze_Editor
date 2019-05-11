@@ -7,14 +7,16 @@ using BaseData;
 
 namespace Labirint_Editor
 {
+    [Serializable]
     public class EditorMob : Mob
     {
-        public string color;
+        public int color;
     }
 
+    [Serializable]
     public class EditorBiome : Biome
     {
-        public string forColor;
-        public string backColor;
+        public int forColor;
+        public int backColor;
     }
 }

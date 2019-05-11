@@ -57,27 +57,27 @@ namespace Labirint_Editor
 
         private void fill_BiomesList ()
         {
-            foreach (UserControl2 us in biomeUCs)
+            for (int i = 0; i <= trackBar1.Value; i++)
             {
                 EditorBiome biome = new EditorBiome();
-                biome.name = us.textBox.Text;
-                biome.forColor = us.comboBox2.SelectedItem.ToString();
-                biome.backColor = us.comboBox3.SelectedItem.ToString();
+                biome.name = biomeUCs[i].textBox.Text;
+                biome.forColor = biomeUCs[i].comboBox2.SelectedIndex;
+                biome.backColor = biomeUCs[i].comboBox3.SelectedIndex;
                 AddBiomes.Add(biome);
             }
         }
 
         private void fill_MobsList ()
         {
-            foreach (UserControl3 us in mobUCs)
+            for (int i = 0; i <= trackBar2.Value; i++)
             {
-                if (us.comboBox3.SelectedItem != null)
+                if (mobUCs[i].comboBox3.SelectedItem != null)
                 {
                     EditorMob mob = new EditorMob();
-                    mob.name = us.textBox.Text;
-                    mob.color = us.comboBox3.SelectedItem.ToString();
-                    mob.sym = us.textBox1.Text.First();
-                    int.TryParse(userControl31.textBox2.Text, out int x);
+                    mob.name = mobUCs[i].textBox.Text;
+                    mob.color = mobUCs[i].comboBox3.SelectedIndex;
+                    mob.sym = mobUCs[i].textBox1.Text.First();
+                    int.TryParse(mobUCs[i].textBox2.Text, out int x);
                     mob.Damage = x;
                     AddMobs.Add(mob);
                 }
@@ -93,14 +93,24 @@ namespace Labirint_Editor
             string directory = saveFileDialog1.InitialDirectory;
             string FileName = directory + saveFileDialog1.FileName + ".xml";
 
-            /*XmlDocument xD = new XmlDocument();
+            XmlDocument xD = new XmlDocument();
             xD.CreateElement("biomes");
-            xD.Save(FileName);
-            */
-            
+            //xD.Save(FileName);
+
+
             XmlSerializer ser = new XmlSerializer(typeof(List<Biome>));
-            FileStream fs = new FileStream(directory + saveFileDialog1.FileName + ".xml", FileMode.OpenOrCreate);
-            ser.Serialize(fs, AddBiomes);
+            FileStream fs = new FileStream(FileName, FileMode.OpenOrCreate);
+
+            List<Biome> biomes = new List<Biome>();
+            for (int i = 0; i < AddBiomes.Count; i++)
+            {
+                Biome biome = new Biome();
+                biome.name = AddBiomes[i].name;
+                biome.forColor = (ConsoleColor)AddBiomes[i].forColor;
+                biome.backColor = (ConsoleColor)AddBiomes[i].backColor;
+                biomes.Add(biome);
+            }
+            ser.Serialize(fs, biomes);
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -108,38 +118,43 @@ namespace Labirint_Editor
             fill_MobsList();
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
+            XmlDocument xD = new XmlDocument();
             string directory = saveFileDialog1.InitialDirectory;
             string FileName = directory + saveFileDialog1.FileName + ".xml";
 
             XmlSerializer ser = new XmlSerializer(typeof(List<Mob>));
             FileStream fs = new FileStream(directory + saveFileDialog1.FileName + ".xml", FileMode.OpenOrCreate);
-            ser.Serialize(fs, AddMobs);
+
+            List<Mob> mobs = new List<Mob>();
+
+            for (int i = 0; i < AddMobs.Count; i++)
+            {
+                Mob mob = new Mob();
+                mob.name = AddMobs[i].name;
+                mob.color = (ConsoleColor)AddMobs[i].color;
+                mob.sym = AddMobs[i].sym;
+                mob.Damage = AddMobs[i].Damage;
+                mobs.Add(mob);
+            }
+
+            
+            ser.Serialize(fs, mobs);
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            if (userControl21.comboBox3.SelectedItem != null || userControl21.comboBox2.SelectedItem != null)
+            for (int i = 0; i < biomeUCs.Count; i++)
             {
-                EditorBiome biome = new EditorBiome();
-                biome.name = userControl21.textBox.Text;
-                biome.forColor = userControl21.comboBox2.SelectedItem.ToString();
-                biome.backColor = userControl21.comboBox3.SelectedItem.ToString();
-                AddBiomes.Add(biome);
+                biomeUCs[i].Enabled = i <= trackBar1.Value;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void trackBar2_Scroll(object sender, EventArgs e)
         {
-            if (userControl31.comboBox3.SelectedItem != null)
+            for (int i = 0; i < mobUCs.Count; i++)
             {
-                EditorMob mob = new EditorMob();
-                mob.name = userControl31.textBox.Text;
-                mob.color = userControl31.comboBox3.SelectedItem.ToString();
-                mob.sym = userControl31.textBox1.Text.First();
-                int.TryParse(userControl31.textBox2.Text, out int x);
-                mob.Damage = x;
-                AddMobs.Add(mob);
+                mobUCs[i].Enabled = i <= trackBar2.Value;
             }
         }
     }
