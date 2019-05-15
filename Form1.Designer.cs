@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel6 = new System.Windows.Forms.Panel();
-            this.MainCustomPanel = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.MainCustomPanel = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.userControl310 = new Labirint_Editor.UserControl3();
@@ -57,14 +59,12 @@
             this.userControl25 = new Labirint_Editor.UserControl2();
             this.userControl23 = new Labirint_Editor.UserControl2();
             this.userControl21 = new Labirint_Editor.UserControl2();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.MainCustomPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel6
@@ -77,6 +77,33 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(463, 679);
             this.panel6.TabIndex = 0;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.trackBar1.Location = new System.Drawing.Point(10, 128);
+            this.trackBar1.Maximum = 9;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(437, 45);
+            this.trackBar1.TabIndex = 5;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.SaveButton.FlatAppearance.BorderSize = 5;
+            this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveButton.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.Location = new System.Drawing.Point(249, 0);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(174, 92);
+            this.SaveButton.TabIndex = 4;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainCustomPanel
             // 
@@ -95,23 +122,6 @@
             this.MainCustomPanel.Name = "MainCustomPanel";
             this.MainCustomPanel.Size = new System.Drawing.Size(453, 496);
             this.MainCustomPanel.TabIndex = 3;
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.SaveButton.FlatAppearance.BorderSize = 5;
-            this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(249, 0);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(174, 92);
-            this.SaveButton.TabIndex = 4;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
-            this.SaveButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
@@ -132,26 +142,18 @@
             this.panel1.Controls.Add(this.textBox23);
             this.panel1.Location = new System.Drawing.Point(506, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(512, 720);
+            this.panel1.Size = new System.Drawing.Size(678, 700);
             this.panel1.TabIndex = 5;
             // 
-            // panel2
+            // trackBar2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Controls.Add(this.userControl310);
-            this.panel2.Controls.Add(this.userControl39);
-            this.panel2.Controls.Add(this.userControl38);
-            this.panel2.Controls.Add(this.userControl37);
-            this.panel2.Controls.Add(this.userControl36);
-            this.panel2.Controls.Add(this.userControl35);
-            this.panel2.Controls.Add(this.userControl34);
-            this.panel2.Controls.Add(this.userControl33);
-            this.panel2.Controls.Add(this.userControl32);
-            this.panel2.Controls.Add(this.userControl31);
-            this.panel2.Location = new System.Drawing.Point(7, 143);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(488, 574);
-            this.panel2.TabIndex = 3;
+            this.trackBar2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.trackBar2.Location = new System.Drawing.Point(11, 92);
+            this.trackBar2.Maximum = 9;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(437, 45);
+            this.trackBar2.TabIndex = 6;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // button1
             // 
@@ -170,6 +172,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.userControl310);
+            this.panel2.Controls.Add(this.userControl39);
+            this.panel2.Controls.Add(this.userControl38);
+            this.panel2.Controls.Add(this.userControl37);
+            this.panel2.Controls.Add(this.userControl36);
+            this.panel2.Controls.Add(this.userControl35);
+            this.panel2.Controls.Add(this.userControl34);
+            this.panel2.Controls.Add(this.userControl33);
+            this.panel2.Controls.Add(this.userControl32);
+            this.panel2.Controls.Add(this.userControl31);
+            this.panel2.Location = new System.Drawing.Point(7, 143);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(668, 554);
+            this.panel2.TabIndex = 3;
+            // 
             // textBox23
             // 
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -184,73 +204,73 @@
             // userControl310
             // 
             this.userControl310.BackColor = System.Drawing.Color.Gray;
-            this.userControl310.Location = new System.Drawing.Point(240, 473);
+            this.userControl310.Location = new System.Drawing.Point(454, 136);
             this.userControl310.Name = "userControl310";
-            this.userControl310.Size = new System.Drawing.Size(200, 101);
+            this.userControl310.Size = new System.Drawing.Size(200, 139);
             this.userControl310.TabIndex = 9;
             // 
             // userControl39
             // 
             this.userControl39.BackColor = System.Drawing.Color.Gray;
-            this.userControl39.Location = new System.Drawing.Point(240, 359);
+            this.userControl39.Location = new System.Drawing.Point(454, 3);
             this.userControl39.Name = "userControl39";
-            this.userControl39.Size = new System.Drawing.Size(200, 101);
+            this.userControl39.Size = new System.Drawing.Size(200, 131);
             this.userControl39.TabIndex = 8;
             // 
             // userControl38
             // 
             this.userControl38.BackColor = System.Drawing.Color.Gray;
-            this.userControl38.Location = new System.Drawing.Point(240, 238);
+            this.userControl38.Location = new System.Drawing.Point(229, 420);
             this.userControl38.Name = "userControl38";
-            this.userControl38.Size = new System.Drawing.Size(200, 101);
+            this.userControl38.Size = new System.Drawing.Size(200, 132);
             this.userControl38.TabIndex = 7;
             // 
             // userControl37
             // 
             this.userControl37.BackColor = System.Drawing.Color.Gray;
-            this.userControl37.Location = new System.Drawing.Point(240, 120);
+            this.userControl37.Location = new System.Drawing.Point(229, 277);
             this.userControl37.Name = "userControl37";
-            this.userControl37.Size = new System.Drawing.Size(200, 101);
+            this.userControl37.Size = new System.Drawing.Size(200, 140);
             this.userControl37.TabIndex = 6;
             // 
             // userControl36
             // 
             this.userControl36.BackColor = System.Drawing.Color.Gray;
-            this.userControl36.Location = new System.Drawing.Point(240, 3);
+            this.userControl36.Location = new System.Drawing.Point(229, 136);
             this.userControl36.Name = "userControl36";
-            this.userControl36.Size = new System.Drawing.Size(200, 101);
+            this.userControl36.Size = new System.Drawing.Size(200, 139);
             this.userControl36.TabIndex = 5;
             // 
             // userControl35
             // 
             this.userControl35.BackColor = System.Drawing.Color.Gray;
-            this.userControl35.Location = new System.Drawing.Point(4, 476);
+            this.userControl35.Location = new System.Drawing.Point(229, 3);
             this.userControl35.Name = "userControl35";
-            this.userControl35.Size = new System.Drawing.Size(200, 101);
+            this.userControl35.Size = new System.Drawing.Size(200, 131);
             this.userControl35.TabIndex = 4;
             // 
             // userControl34
             // 
             this.userControl34.BackColor = System.Drawing.Color.Gray;
-            this.userControl34.Location = new System.Drawing.Point(4, 359);
+            this.userControl34.Location = new System.Drawing.Point(4, 419);
             this.userControl34.Name = "userControl34";
-            this.userControl34.Size = new System.Drawing.Size(200, 101);
+            this.userControl34.Size = new System.Drawing.Size(200, 132);
             this.userControl34.TabIndex = 3;
             // 
             // userControl33
             // 
             this.userControl33.BackColor = System.Drawing.Color.Gray;
-            this.userControl33.Location = new System.Drawing.Point(4, 238);
+            this.userControl33.Location = new System.Drawing.Point(4, 277);
             this.userControl33.Name = "userControl33";
-            this.userControl33.Size = new System.Drawing.Size(200, 101);
+            this.userControl33.Size = new System.Drawing.Size(200, 140);
             this.userControl33.TabIndex = 2;
             // 
             // userControl32
             // 
             this.userControl32.BackColor = System.Drawing.Color.Gray;
-            this.userControl32.Location = new System.Drawing.Point(4, 120);
+            this.userControl32.Location = new System.Drawing.Point(4, 136);
             this.userControl32.Name = "userControl32";
-            this.userControl32.Size = new System.Drawing.Size(200, 101);
+            this.userControl32.Size = new System.Drawing.Size(200, 139);
             this.userControl32.TabIndex = 1;
             // 
             // userControl31
@@ -258,7 +278,7 @@
             this.userControl31.BackColor = System.Drawing.Color.Gray;
             this.userControl31.Location = new System.Drawing.Point(4, 3);
             this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(200, 101);
+            this.userControl31.Size = new System.Drawing.Size(200, 131);
             this.userControl31.TabIndex = 0;
             // 
             // userControl210
@@ -341,40 +361,20 @@
             this.userControl21.Size = new System.Drawing.Size(210, 83);
             this.userControl21.TabIndex = 0;
             // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.trackBar1.Location = new System.Drawing.Point(10, 128);
-            this.trackBar1.Maximum = 9;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(437, 45);
-            this.trackBar1.TabIndex = 5;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.trackBar2.Location = new System.Drawing.Point(11, 92);
-            this.trackBar2.Maximum = 9;
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(437, 45);
-            this.trackBar2.TabIndex = 6;
-            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
-            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(1030, 741);
+            this.ClientSize = new System.Drawing.Size(1196, 738);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Name = "Form1";
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.MainCustomPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -16,7 +16,6 @@ E:\MyCode\kirill_strong\Labirint_Editor\obj\Debug\Labirint_Editor.UserControl3.r
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\bin\Debug\BaseData.dll
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\bin\Debug\Labirint_Editor.exe.config
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\bin\Debug\BaseData.pdb
-E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.csprojAssemblyReference.cache
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.Form1.resources
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.Properties.Resources.resources
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.UserControl2.resources
@@ -26,3 +25,4 @@ E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.csproj.CopyComplete
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.exe
 E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.pdb
+E:\MyCode\kirill_strong\Labirint_Game\Labirint_Editor\obj\Debug\Labirint_Editor.csprojAssemblyReference.cache

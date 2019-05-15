@@ -61,8 +61,8 @@ namespace Labirint_Editor
             {
                 EditorBiome biome = new EditorBiome();
                 biome.name = biomeUCs[i].textBox.Text;
-                biome.forColor = biomeUCs[i].comboBox2.SelectedIndex;
-                biome.backColor = biomeUCs[i].comboBox3.SelectedIndex;
+                biome.forColor = biomeUCs[i].comboBox3.SelectedIndex;
+                biome.backColor = biomeUCs[i].comboBox1.SelectedIndex;
                 AddBiomes.Add(biome);
             }
         }
@@ -79,6 +79,7 @@ namespace Labirint_Editor
                     mob.sym = mobUCs[i].textBox1.Text.First();
                     int.TryParse(mobUCs[i].textBox2.Text, out int x);
                     mob.Damage = x;
+                    mob.biome = mobUCs[i].textBox3.Text;
                     AddMobs.Add(mob);
                 }
             }
@@ -134,6 +135,7 @@ namespace Labirint_Editor
                 mob.color = (ConsoleColor)AddMobs[i].color;
                 mob.sym = AddMobs[i].sym;
                 mob.Damage = AddMobs[i].Damage;
+                mob.biome = AddMobs[i].biome;
                 mobs.Add(mob);
             }
 

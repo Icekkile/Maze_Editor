@@ -31,11 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,31 +66,6 @@
             this.label6.Size = new System.Drawing.Size(74, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Enter ForColor";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Black",
-            "Blue",
-            "Cyan",
-            "DarkBlue",
-            "DarkCyan",
-            "DarkGray",
-            "DarkGreen",
-            "DarkMagenta",
-            "DarkRed",
-            "DarkYellow",
-            "Gray",
-            "Green",
-            "Magenta",
-            "Red",
-            "White",
-            "Yellow"});
-            this.comboBox3.Location = new System.Drawing.Point(6, 28);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 21);
-            this.comboBox3.TabIndex = 15;
             // 
             // textBox
             // 
@@ -124,21 +101,65 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "Enter Damage";
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Black",
+            "DarkBlue",
+            "DarkGreen",
+            "DarkCyan",
+            "DarkRed",
+            "DarkMagenta",
+            "DarkYellow",
+            "Gray",
+            "DarkGrey",
+            "Blue",
+            "Green",
+            "Cyan",
+            "Red",
+            "Magenta",
+            "Yellow",
+            "White"});
+            this.comboBox3.Location = new System.Drawing.Point(3, 26);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(100, 21);
+            this.comboBox3.TabIndex = 22;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(6, 110);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(180, 20);
+            this.textBox3.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 94);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Biome";
+            // 
             // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.textBox);
             this.Name = "UserControl3";
-            this.Size = new System.Drawing.Size(200, 101);
+            this.Size = new System.Drawing.Size(200, 139);
             this.Load += new System.EventHandler(this.UserControl3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,10 +171,12 @@
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.ComboBox comboBox3;
         public System.Windows.Forms.TextBox textBox;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.Label label4;
     }
 }
