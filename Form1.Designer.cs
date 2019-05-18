@@ -32,23 +32,6 @@
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.SaveButton = new System.Windows.Forms.Button();
             this.MainCustomPanel = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.userControl310 = new Labirint_Editor.UserControl3();
-            this.userControl39 = new Labirint_Editor.UserControl3();
-            this.userControl38 = new Labirint_Editor.UserControl3();
-            this.userControl37 = new Labirint_Editor.UserControl3();
-            this.userControl36 = new Labirint_Editor.UserControl3();
-            this.userControl35 = new Labirint_Editor.UserControl3();
-            this.userControl34 = new Labirint_Editor.UserControl3();
-            this.userControl33 = new Labirint_Editor.UserControl3();
-            this.userControl32 = new Labirint_Editor.UserControl3();
-            this.userControl31 = new Labirint_Editor.UserControl3();
             this.userControl210 = new Labirint_Editor.UserControl2();
             this.userControl22 = new Labirint_Editor.UserControl2();
             this.userControl26 = new Labirint_Editor.UserControl2();
@@ -59,6 +42,23 @@
             this.userControl25 = new Labirint_Editor.UserControl2();
             this.userControl23 = new Labirint_Editor.UserControl2();
             this.userControl21 = new Labirint_Editor.UserControl2();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.userControl310 = new Labirint_Editor.UserControl3();
+            this.userControl39 = new Labirint_Editor.UserControl3();
+            this.userControl38 = new Labirint_Editor.UserControl3();
+            this.userControl37 = new Labirint_Editor.UserControl3();
+            this.userControl36 = new Labirint_Editor.UserControl3();
+            this.userControl35 = new Labirint_Editor.UserControl3();
+            this.userControl34 = new Labirint_Editor.UserControl3();
+            this.userControl33 = new Labirint_Editor.UserControl3();
+            this.userControl32 = new Labirint_Editor.UserControl3();
+            this.userControl31 = new Labirint_Editor.UserControl3();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.MainCustomPanel.SuspendLayout();
@@ -123,6 +123,86 @@
             this.MainCustomPanel.Size = new System.Drawing.Size(453, 496);
             this.MainCustomPanel.TabIndex = 3;
             // 
+            // userControl210
+            // 
+            this.userControl210.BackColor = System.Drawing.Color.Gray;
+            this.userControl210.Location = new System.Drawing.Point(230, 396);
+            this.userControl210.Name = "userControl210";
+            this.userControl210.Size = new System.Drawing.Size(210, 83);
+            this.userControl210.TabIndex = 9;
+            // 
+            // userControl22
+            // 
+            this.userControl22.BackColor = System.Drawing.Color.Gray;
+            this.userControl22.Location = new System.Drawing.Point(3, 104);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(210, 83);
+            this.userControl22.TabIndex = 1;
+            // 
+            // userControl26
+            // 
+            this.userControl26.BackColor = System.Drawing.Color.Gray;
+            this.userControl26.Location = new System.Drawing.Point(230, 9);
+            this.userControl26.Name = "userControl26";
+            this.userControl26.Size = new System.Drawing.Size(210, 83);
+            this.userControl26.TabIndex = 5;
+            // 
+            // userControl24
+            // 
+            this.userControl24.BackColor = System.Drawing.Color.Gray;
+            this.userControl24.Location = new System.Drawing.Point(4, 298);
+            this.userControl24.Name = "userControl24";
+            this.userControl24.Size = new System.Drawing.Size(210, 83);
+            this.userControl24.TabIndex = 3;
+            // 
+            // userControl29
+            // 
+            this.userControl29.BackColor = System.Drawing.Color.Gray;
+            this.userControl29.Location = new System.Drawing.Point(230, 298);
+            this.userControl29.Name = "userControl29";
+            this.userControl29.Size = new System.Drawing.Size(210, 83);
+            this.userControl29.TabIndex = 8;
+            // 
+            // userControl28
+            // 
+            this.userControl28.BackColor = System.Drawing.Color.Gray;
+            this.userControl28.Location = new System.Drawing.Point(230, 202);
+            this.userControl28.Name = "userControl28";
+            this.userControl28.Size = new System.Drawing.Size(210, 83);
+            this.userControl28.TabIndex = 7;
+            // 
+            // userControl27
+            // 
+            this.userControl27.BackColor = System.Drawing.Color.Gray;
+            this.userControl27.Location = new System.Drawing.Point(230, 104);
+            this.userControl27.Name = "userControl27";
+            this.userControl27.Size = new System.Drawing.Size(210, 83);
+            this.userControl27.TabIndex = 6;
+            // 
+            // userControl25
+            // 
+            this.userControl25.BackColor = System.Drawing.Color.Gray;
+            this.userControl25.Location = new System.Drawing.Point(4, 396);
+            this.userControl25.Name = "userControl25";
+            this.userControl25.Size = new System.Drawing.Size(210, 83);
+            this.userControl25.TabIndex = 4;
+            // 
+            // userControl23
+            // 
+            this.userControl23.BackColor = System.Drawing.Color.Gray;
+            this.userControl23.Location = new System.Drawing.Point(4, 202);
+            this.userControl23.Name = "userControl23";
+            this.userControl23.Size = new System.Drawing.Size(210, 83);
+            this.userControl23.TabIndex = 2;
+            // 
+            // userControl21
+            // 
+            this.userControl21.BackColor = System.Drawing.Color.Gray;
+            this.userControl21.Location = new System.Drawing.Point(3, 9);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(210, 83);
+            this.userControl21.TabIndex = 0;
+            // 
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -148,7 +228,7 @@
             // trackBar2
             // 
             this.trackBar2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.trackBar2.Location = new System.Drawing.Point(11, 92);
+            this.trackBar2.Location = new System.Drawing.Point(11, 87);
             this.trackBar2.Maximum = 9;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(437, 45);
@@ -166,7 +246,7 @@
             this.button1.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(181, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 92);
+            this.button1.Size = new System.Drawing.Size(184, 86);
             this.button1.TabIndex = 4;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
@@ -185,21 +265,10 @@
             this.panel2.Controls.Add(this.userControl33);
             this.panel2.Controls.Add(this.userControl32);
             this.panel2.Controls.Add(this.userControl31);
-            this.panel2.Location = new System.Drawing.Point(7, 143);
+            this.panel2.Location = new System.Drawing.Point(7, 132);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(668, 554);
             this.panel2.TabIndex = 3;
-            // 
-            // textBox23
-            // 
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Font = new System.Drawing.Font("Algerian", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(3, 14);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(198, 34);
-            this.textBox23.TabIndex = 0;
-            this.textBox23.Text = "Mobs Editor";
             // 
             // userControl310
             // 
@@ -281,85 +350,16 @@
             this.userControl31.Size = new System.Drawing.Size(200, 131);
             this.userControl31.TabIndex = 0;
             // 
-            // userControl210
+            // textBox23
             // 
-            this.userControl210.BackColor = System.Drawing.Color.Gray;
-            this.userControl210.Location = new System.Drawing.Point(230, 396);
-            this.userControl210.Name = "userControl210";
-            this.userControl210.Size = new System.Drawing.Size(210, 83);
-            this.userControl210.TabIndex = 9;
-            // 
-            // userControl22
-            // 
-            this.userControl22.BackColor = System.Drawing.Color.Gray;
-            this.userControl22.Location = new System.Drawing.Point(3, 104);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(210, 83);
-            this.userControl22.TabIndex = 1;
-            // 
-            // userControl26
-            // 
-            this.userControl26.BackColor = System.Drawing.Color.Gray;
-            this.userControl26.Location = new System.Drawing.Point(230, 9);
-            this.userControl26.Name = "userControl26";
-            this.userControl26.Size = new System.Drawing.Size(210, 83);
-            this.userControl26.TabIndex = 5;
-            // 
-            // userControl24
-            // 
-            this.userControl24.BackColor = System.Drawing.Color.Gray;
-            this.userControl24.Location = new System.Drawing.Point(4, 298);
-            this.userControl24.Name = "userControl24";
-            this.userControl24.Size = new System.Drawing.Size(210, 83);
-            this.userControl24.TabIndex = 3;
-            // 
-            // userControl29
-            // 
-            this.userControl29.BackColor = System.Drawing.Color.Gray;
-            this.userControl29.Location = new System.Drawing.Point(230, 298);
-            this.userControl29.Name = "userControl29";
-            this.userControl29.Size = new System.Drawing.Size(210, 83);
-            this.userControl29.TabIndex = 8;
-            // 
-            // userControl28
-            // 
-            this.userControl28.BackColor = System.Drawing.Color.Gray;
-            this.userControl28.Location = new System.Drawing.Point(230, 202);
-            this.userControl28.Name = "userControl28";
-            this.userControl28.Size = new System.Drawing.Size(210, 83);
-            this.userControl28.TabIndex = 7;
-            // 
-            // userControl27
-            // 
-            this.userControl27.BackColor = System.Drawing.Color.Gray;
-            this.userControl27.Location = new System.Drawing.Point(230, 104);
-            this.userControl27.Name = "userControl27";
-            this.userControl27.Size = new System.Drawing.Size(210, 83);
-            this.userControl27.TabIndex = 6;
-            // 
-            // userControl25
-            // 
-            this.userControl25.BackColor = System.Drawing.Color.Gray;
-            this.userControl25.Location = new System.Drawing.Point(4, 396);
-            this.userControl25.Name = "userControl25";
-            this.userControl25.Size = new System.Drawing.Size(210, 83);
-            this.userControl25.TabIndex = 4;
-            // 
-            // userControl23
-            // 
-            this.userControl23.BackColor = System.Drawing.Color.Gray;
-            this.userControl23.Location = new System.Drawing.Point(4, 202);
-            this.userControl23.Name = "userControl23";
-            this.userControl23.Size = new System.Drawing.Size(210, 83);
-            this.userControl23.TabIndex = 2;
-            // 
-            // userControl21
-            // 
-            this.userControl21.BackColor = System.Drawing.Color.Gray;
-            this.userControl21.Location = new System.Drawing.Point(3, 9);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(210, 83);
-            this.userControl21.TabIndex = 0;
+            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox23.Font = new System.Drawing.Font("Algerian", 19.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox23.Location = new System.Drawing.Point(3, 14);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
+            this.textBox23.Size = new System.Drawing.Size(198, 34);
+            this.textBox23.TabIndex = 0;
+            this.textBox23.Text = "Mobs Editor";
             // 
             // Form1
             // 
